@@ -1,13 +1,16 @@
-import { useState } from "react";
-
+import React from "react";
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Roberts</h1>
+      <Nav />
+      <Home />
+      <Footer />
     </>
   );
 }

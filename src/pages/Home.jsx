@@ -1,38 +1,26 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
+import Card from "react-bootstrap/Card";
+import hero from "../assets/images/roberts.hero.jpg";
 
 function BasicExample() {
   return (
-    <div style={{ paddingTop: "10em", paddingBottom: "10em" }}>
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan={2}>Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </Table>
+    <div style={{ paddingTop: "2em", paddingBottom: "10em" }}>
+      <Card>
+        <Card.Img
+          variant="top"
+          src={hero}
+          style={{ maxHeight: "600px", maxWidth: "500px" }}
+        />
+        <Card.Body>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card>
+        <Card.Body>This is some text within a card body.</Card.Body>
+      </Card>
     </div>
   );
 }

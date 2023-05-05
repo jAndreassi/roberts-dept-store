@@ -13,6 +13,7 @@ function DefaultExample() {
   return (
     <>
       <div>
+        <hr></hr>
         <div style={{ paddingBottom: "2em" }}>
           <Nav className="justify-content-center" activeKey="/home">
             <Nav.Item>
@@ -26,6 +27,7 @@ function DefaultExample() {
               <Nav.Link
                 eventKey="link-1"
                 style={{ color: "inherit", textDecoration: "none" }}>
+                {" "}
                 <FaFacebook size={30} />{" "}
               </Nav.Link>
             </Nav.Item>
@@ -39,15 +41,16 @@ function DefaultExample() {
             Sunday 11 am to 4 pm
           </ListGroup.Item>
           <ListGroup.Item>
-            <FaMapMarkerAlt />{" "}
             <Link
               to={{
-                pathname:
-                  "https://www.google.com/maps/dir/?api=1&destination=342+Mamaroneck+Ave%2C+Mamaroneck+NY+10543",
+                pathname: "https://www.google.com/maps/dir/",
+                search:
+                  "?api=1&destination=342+Mamaroneck+Ave%2C+Mamaroneck+NY+10543",
               }}
               target="_blank"
               style={{ color: "inherit", textDecoration: "none" }}>
-              342 Mamaroneck Ave, Mamaroneck NY 10543
+              <i className="bi bi-geo-alt-fill"></i> 342 Mamaroneck Ave,
+              Mamaroneck NY 10543
             </Link>
           </ListGroup.Item>
           <ListGroup.Item>

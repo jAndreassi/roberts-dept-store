@@ -4,14 +4,22 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Nav />
-      <Home />
+    <BrowserRouter>
+      <Nav /> 
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+
+        
+      
+      </Routes>
       <Footer />
-    </>
+        
+    </BrowserRouter>
+      
   );
 }
 

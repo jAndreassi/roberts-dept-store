@@ -63,7 +63,7 @@ function DefaultExample() {
             <a
               href="tel:9146980969"
               style={{ color: "inherit", textDecoration: "none" }}>
-              <i class="bi bi-phone"></i> (914) 698-0969
+              <i className="bi bi-phone"></i> (914) 698-0969
             </a>
           </ListGroup.Item>
         </ListGroup>

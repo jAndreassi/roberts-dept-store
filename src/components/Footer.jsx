@@ -1,7 +1,13 @@
 import * as React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 function DefaultExample() {
   return (
@@ -28,14 +34,31 @@ function DefaultExample() {
         <ListGroup>
           <ListGroup.Item>About Us</ListGroup.Item>
           <ListGroup.Item>
-            Hours:<br></br> Monday through Friday 9am to 6:30pm<br></br>{" "}
-            Saturday 9am to 6pm<br></br>
-            Sunday 11am to 4pm
+            Hours:<br></br> Monday through Friday 9 am to 6:30 pm<br></br>{" "}
+            Saturday 9 am to 6 pm<br></br>
+            Sunday 11 am to 4 pm
           </ListGroup.Item>
           <ListGroup.Item>
-            342 Mamaroneck Ave, Mamaroneck NY 10543
+            <FaMapMarkerAlt />{" "}
+            <Link
+              to={{
+                pathname:
+                  "https://www.google.com/maps/dir/?api=1&destination=342+Mamaroneck+Ave%2C+Mamaroneck+NY+10543",
+              }}
+              target="_blank"
+              style={{ color: "inherit", textDecoration: "none" }}>
+              342 Mamaroneck Ave, Mamaroneck NY 10543
+            </Link>
           </ListGroup.Item>
-          <ListGroup.Item>info@robertsdeptstore.com</ListGroup.Item>
+          <ListGroup.Item>
+            {" "}
+            <FaEnvelope />{" "}
+            <a
+              href="mailto:info@robertsdeptstore.com"
+              style={{ color: "inherit", textDecoration: "none" }}>
+              info@robertsdeptstore.com
+            </a>
+          </ListGroup.Item>
           <ListGroup.Item>
             <a
               href="tel:9146980969"

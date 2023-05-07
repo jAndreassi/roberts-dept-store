@@ -12,7 +12,7 @@ import {
 function DefaultExample() {
   return (
     <>
-      <div>
+      <div style={{ backgroundColor: "#292827", color: "white" }}>
         <hr></hr>
         <div style={{ paddingBottom: "2em" }}>
           <Nav className="justify-content-center" activeKey="/home">
@@ -33,14 +33,19 @@ function DefaultExample() {
             </Nav.Item>
           </Nav>
         </div>
-        <ListGroup>
-          <ListGroup.Item>About Us</ListGroup.Item>
-          <ListGroup.Item>
-            Hours:<br></br> Monday through Friday 9 am to 6:30 pm<br></br>{" "}
-            Saturday 9 am to 6 pm<br></br>
-            Sunday 11 am to 4 pm
+        <ListGroup className="text-center">
+          <ListGroup.Item
+            className="border-0"
+            style={{ backgroundColor: "#292827", color: "white" }}>
+            <a
+              href="tel:9146980969"
+              style={{ color: "inherit", textDecoration: "none" }}>
+              <i className="bi bi-phone"></i> (914) 698-0969
+            </a>
           </ListGroup.Item>
-          <ListGroup.Item>
+          <ListGroup.Item
+            className="border-0"
+            style={{ backgroundColor: "#292827", color: "white" }}>
             <Link
               to={{
                 pathname: "https://www.google.com/maps/dir/",
@@ -53,7 +58,9 @@ function DefaultExample() {
               Mamaroneck NY 10543
             </Link>
           </ListGroup.Item>
-          <ListGroup.Item>
+          <ListGroup.Item
+            className="border-0"
+            style={{ backgroundColor: "#292827", color: "white" }}>
             {" "}
             <FaEnvelope />{" "}
             <a
@@ -62,15 +69,28 @@ function DefaultExample() {
               info@robertsdeptstore.com
             </a>
           </ListGroup.Item>
-          <ListGroup.Item>
-            <a
-              href="tel:9146980969"
-              style={{ color: "inherit", textDecoration: "none" }}>
-              <i className="bi bi-phone"></i> (914) 698-0969
-            </a>
+
+          <ListGroup.Item
+            className="border-0"
+            style={{ backgroundColor: "#292827", color: "white" }}>
+            Hours:<br></br> Monday through Friday 9 am to 6:30 pm<br></br>{" "}
+            Saturday 9 am to 6 pm<br></br>
+            Sunday 11 am to 4 pm
+          </ListGroup.Item>
+
+          <ListGroup.Item
+            className="border-0"
+            style={{ backgroundColor: "#292827", color: "white" }}>
+            About Us
           </ListGroup.Item>
         </ListGroup>
       </div>
+      <div
+        style={{
+          backgroundColor: "#292827",
+          color: "white",
+          paddingBottom: "5em",
+        }}></div>
     </>
   );
 }

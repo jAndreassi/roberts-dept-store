@@ -1,0 +1,29 @@
+.card-img-top {
+  height: 50%;
+  object-fit: contain;
+
+  margin-top: 10px;
+}
+
+.card {
+  margin: 0.5em;
+}
+
+.row {
+  padding: 1em;
+}
+
+.card {
+  position: relative; /* set the card position to relative */
+  height: 300px;
+  margin: 10px;
+}
+
+.card button {
+  background: #133955;
+  position: absolute; /* position the button absolutely */
+  bottom: 10px; /* set the distance from the bottom */
+  left: 50%; /* position the button horizontally centered */
+  transform: translateX(-50%); /* adjust the horizontal position */
+  width: 80%;
+}

@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-
+import Merrell from "../assets/images/merrell.logo.jpg";
 function BasicExample() {
   return (
-    <div style={{ paddingTop: "10em", paddingBottom: "10em" }}>
+    <div style={{ padding: "3em" }}>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src={Merrell} />
         <Card.Body>
           <Card.Title>Footwear</Card.Title>
           <Card.Text>

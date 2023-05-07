@@ -51,6 +51,16 @@ function BasicExample() {
               }}>
               Accessories
             </Link>
+            <Link
+              to="/Brands"
+              style={{
+                textDecoration: "none",
+                fontSize: "1em",
+                marginRight: "1rem",
+                color: "black",
+              }}>
+              Brands
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

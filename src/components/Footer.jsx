@@ -10,6 +10,11 @@ import {
 } from "react-icons/fa";
 
 function DefaultExample() {
+  const [showAboutText, setShowAboutText] = React.useState(false);
+
+  const handleAboutClick = () => {
+    setShowAboutText(!showAboutText);
+  };
   return (
     <>
       <div style={{ backgroundColor: "#292827", color: "white" }}>
@@ -50,14 +55,14 @@ function DefaultExample() {
               to={{
                 pathname: "https://www.google.com/maps/dir/",
                 search:
-                  "?api=1&destination=342+Mamaroneck+Ave%2C+Mamaroneck+NY+10543",
+                  "?api=1&destination=342+Mamaroneck+Ave%2C+Mamaroneck+NY+10543&destination_place_id=ChIJ5-h-AIaRwokRJzZpLsgZPIw",
               }}
               target="_blank"
               style={{ color: "inherit", textDecoration: "none" }}>
-              <i className="bi bi-geo-alt-fill"></i> 342 Mamaroneck Ave,
-              Mamaroneck NY 10543
+              <FaMapMarkerAlt /> 342 Mamaroneck Ave, Mamaroneck NY 10543
             </Link>
           </ListGroup.Item>
+
           <ListGroup.Item
             className="border-0"
             style={{ backgroundColor: "#292827", color: "white" }}>
@@ -69,19 +74,32 @@ function DefaultExample() {
               info@robertsdeptstore.com
             </a>
           </ListGroup.Item>
-
+          <ListGroup.Item
+            className="border-0"
+            style={{
+              backgroundColor: "#292827",
+              color: "white",
+              cursor: "pointer",
+            }}
+            onClick={() => setShowAboutText(!showAboutText)}>
+            About Us
+          </ListGroup.Item>
+          {showAboutText && (
+            <ListGroup.Item
+              className="border-0"
+              style={{ backgroundColor: "#292827", color: "white" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel
+              dolorum neque cum illo? Et molestiae inventore distinctio eius
+              reprehenderit. Eaque tempore tenetur ducimus officia omnis harum
+              ipsam accusamus fugiat.
+            </ListGroup.Item>
+          )}
           <ListGroup.Item
             className="border-0"
             style={{ backgroundColor: "#292827", color: "white" }}>
             Hours:<br></br> Monday through Friday 9 am to 6:30 pm<br></br>{" "}
             Saturday 9 am to 6 pm<br></br>
             Sunday 11 am to 4 pm
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            className="border-0"
-            style={{ backgroundColor: "#292827", color: "white" }}>
-            About Us
           </ListGroup.Item>
         </ListGroup>
       </div>

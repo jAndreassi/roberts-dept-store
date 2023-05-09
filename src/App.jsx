@@ -7,7 +7,7 @@ import Clothing from "./pages/Clothing";
 import Accessories from "./pages/Accessories";
 import Brands from "./pages/Brands";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

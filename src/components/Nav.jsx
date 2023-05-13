@@ -69,10 +69,6 @@ function BasicExample() {
 
                   marginRight: "1rem",
                   color: "black",
-                }}
-                activeStyle={{
-                  fontWeight: "bold",
-                  color: "blue",
                 }}>
                 Footwear
               </Link>

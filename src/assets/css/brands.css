@@ -27,3 +27,7 @@
   transform: translateX(-50%); /* adjust the horizontal position */
   width: 80%;
 }
+
+.mainPics {
+  height: 400px;
+}

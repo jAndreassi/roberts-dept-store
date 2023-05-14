@@ -4,16 +4,16 @@ import Button from "react-bootstrap/Button";
 import hero from "../assets/images/roberts.hero.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Wolbanner from "../assets/images/WOLVERINE.BANNER.png";
-import boot1 from "../assets/images/W03226.jpg";
-import boot2 from "../assets/images/W10315.jpg";
-import boot3 from "../assets/images/W10317.jpg";
-import boot4 from "../assets/images/W10788.jpg";
+import Wolbanner from "../assets/images/banners/WOLVERINE.BANNER.png";
+import boot1 from "../assets/images/wolverines/W03226.jpg";
+import boot2 from "../assets/images/wolverines/W10315.jpg";
+import boot3 from "../assets/images/wolverines/W10317.jpg";
+import boot4 from "../assets/images/wolverines/W10788.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import Slide1 from "../assets/images/brandslide1.png";
-import Slide2 from "../assets/images/brandslide2.png";
-import Slide3 from "../assets/images/brandslide3.png";
-import keenbanner from "../assets/images/keen.banner.png";
+import Slide1 from "../assets/images/carosuel/brandslide1.png";
+import Slide2 from "../assets/images/carosuel/brandslide2.png";
+import Slide3 from "../assets/images/carosuel/brandslide3.png";
+import keenbanner from "../assets/images/banners/keen.banner.png";
 import Keenboot from "../assets/images/keenutilityboot.jpeg";
 
 const boots = [boot1, Keenboot, boot3, boot4];
@@ -40,7 +40,7 @@ function BasicExample() {
             <Card className="custom-card">
               <Card.Img className="mainPics" variant="top" src={boots[idx]} />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Workboots!</Card.Title>
                 <Card.Text>
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit

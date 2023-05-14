@@ -6,6 +6,7 @@ import Footwear from "./pages/Footwear";
 import Clothing from "./pages/Clothing";
 import Accessories from "./pages/Accessories";
 import Brands from "./pages/Brands";
+import Hivis from "./pages/Hivis";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Clothing" element={<Clothing />} />
         <Route path="/Accessories" element={<Accessories />} />
         <Route path="/Brands" element={<Brands />} />
+        <Route path="/Hivis" element={<Hivis />} />
       </Routes>
       <Footer />
     </BrowserRouter>

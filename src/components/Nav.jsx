@@ -6,7 +6,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import "../assets/css/nav.css";
 
 function BasicExample() {
   return (
@@ -38,15 +37,29 @@ function BasicExample() {
             </Navbar.Brand>
           </Link>
         </Container>
-        <Form className="d-flex" style={{ marginRight: "1em" }}>
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-light">Search</Button>
-        </Form>
+        <div>
+          <Form
+            className="d-flex"
+            style={{ marginRight: "1em", marginBottom: ".3em" }}>
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-light">Search</Button>
+          </Form>
+          <a
+            href="#footer"
+            style={{
+              textDecoration: "none",
+              fontSize: ".8em",
+              marginRight: "1rem",
+              color: "white",
+            }}>
+            Store Info/Contact Us
+          </a>
+        </div>
       </Navbar>
       <Navbar
         style={{
@@ -95,7 +108,7 @@ function BasicExample() {
                 Accessories
               </Link>
               <Link
-                to="/Brands"
+                to="/Hivis"
                 style={{
                   textDecoration: "none",
                   fontSize: "1em",
@@ -113,16 +126,6 @@ function BasicExample() {
                   color: "black",
                 }}>
                 Brands
-              </Link>
-              <Link
-                to="/Brands"
-                style={{
-                  textDecoration: "none",
-                  fontSize: "1em",
-                  marginRight: "1rem",
-                  color: "black",
-                }}>
-                Store Info
               </Link>
             </Nav>
           </Navbar.Collapse>

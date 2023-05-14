@@ -14,17 +14,17 @@
 }
 
 .card {
-  position: relative; /* set the card position to relative */
+  position: relative;
   height: 300px;
   margin: 10px;
 }
 
 .card button {
   background: #133955;
-  position: absolute; /* position the button absolutely */
-  bottom: 10px; /* set the distance from the bottom */
-  left: 50%; /* position the button horizontally centered */
-  transform: translateX(-50%); /* adjust the horizontal position */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80%;
 }
 

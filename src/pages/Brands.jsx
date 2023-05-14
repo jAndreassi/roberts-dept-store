@@ -1,17 +1,17 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Merrell from "../assets/images/merrell.logo.jpg";
-import Timberland from "../assets/images/timberland-logo.png";
-import NewBalance from "../assets/images/nb.logo.png";
-import Bates from "../assets/images/bates.logo.png";
-import Carolina from "../assets/images/carolina.logo.jpg";
-import Danner from "../assets/images/danner-logo.png";
-import Redwing from "../assets/images/red-wing-shoes-logo.png";
-import Keen from "../assets/images/keen.logo.png";
-import Keenutility from "../assets/images/keen.utility.logo.png";
-import Olukai from "../assets/images/olukai.logo.jpeg";
-import Timberlandpro from "../assets/images/timb.pro.logo.jpg";
-import Muck from "../assets/images/muck.logo.png";
+import Merrell from "../assets/images/logos/merrell.logo.jpg";
+import Timberland from "../assets/images/logos/timberland-logo.png";
+import NewBalance from "../assets/images/logos/nb.logo.png";
+import Bates from "../assets/images/logos/bates.logo.png";
+import Carolina from "../assets/images/logos/carolina.logo.jpg";
+import Danner from "../assets/images/logos/danner-logo.png";
+import Redwing from "../assets/images/logos/red-wing-shoes-logo.png";
+import Keen from "../assets/images/logos/keen.logo.png";
+import Keenutility from "../assets/images/logos/keen.utility.logo.png";
+import Olukai from "../assets/images/logos/olukai.logo.jpeg";
+import Timberlandpro from "../assets/images/logos/timb.pro.logo.jpg";
+import Muck from "../assets/images/logos/muck.logo.png";
 
 import "../assets/css/brands.css";
 function BasicExample() {

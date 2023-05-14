@@ -17,7 +17,7 @@ function DefaultExample() {
   };
   return (
     <>
-      <div style={{ backgroundColor: "#292827", color: "white" }}>
+      <div id="footer" style={{ backgroundColor: "#292827", color: "white" }}>
         <hr></hr>
         <div style={{ paddingBottom: "2em" }}>
           <Nav className="justify-content-center" activeKey="/home">

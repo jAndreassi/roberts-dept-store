@@ -15,7 +15,7 @@ function BasicExample() {
             <Figure.Caption className="text-center">Wolverine</Figure.Caption>
           </Figure>
           <span className="mx-auto" style={{ fontSize: "10em" }}>
-            Footwear!
+            Hi-Vis Clothing!
           </span>
           <Figure className="m-0">
             <Figure.Image width={171} height={180} alt="Shirt 2" src={boot2} />

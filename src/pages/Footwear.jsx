@@ -24,15 +24,17 @@ function BasicExample() {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Body className="d-flex justify-content-between align-items-center">
-          <Button variant="primary">Primary</Button>{" "}
-          <Button variant="secondary">Secondary</Button>{" "}
-          <Button variant="success">Success</Button>{" "}
-          <Button variant="warning">Warning</Button>{" "}
-          <Button variant="danger">Danger</Button>{" "}
-          <Button variant="info">Info</Button>{" "}
-          <Button variant="light">Light</Button>{" "}
-          <Button variant="dark">Dark</Button>
+        <Card.Body className="d-flex align-items-center"
+          style={{height: "10vh", justifyContent: "space-around", padding: '1em' }}
+        >
+          <Button variant="primary" className="d-inline-block">Primary</Button>{" "}
+          <Button variant="secondary" className="d-inline-block">Secondary</Button>{" "}
+          <Button variant="success" className="d-inline-block">Success</Button>{" "}
+          <Button variant="warning" className="d-inline-block">Warning</Button>{" "}
+          <Button variant="danger" className="d-inline-block">Danger</Button>{" "}
+          <Button variant="info" className="d-inline-block">Info</Button>{" "}
+          <Button variant="light" className="d-inline-block">Light</Button>{" "}
+          <Button variant="dark" className="d-inline-block">Dark</Button>
         </Card.Body>
       </Card>
     </div>

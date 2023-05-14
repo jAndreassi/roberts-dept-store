@@ -25,7 +25,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Merrell's
           </Button>
         </Card.Body>
@@ -38,7 +38,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Timberland's
           </Button>
         </Card.Body>
@@ -51,7 +51,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all New Balance's
           </Button>
         </Card.Body>
@@ -64,7 +64,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Carolina's
           </Button>
         </Card.Body>
@@ -77,7 +77,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Danners's
           </Button>
         </Card.Body>
@@ -90,7 +90,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Bates
           </Button>
         </Card.Body>
@@ -104,7 +104,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Keen's
           </Button>
         </Card.Body>
@@ -117,7 +117,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Keen Utility's
           </Button>
         </Card.Body>
@@ -130,7 +130,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Olukai's
           </Button>
         </Card.Body>
@@ -143,7 +143,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Redwing's
           </Button>
         </Card.Body>
@@ -156,7 +156,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Timberland Pro's
           </Button>
         </Card.Body>
@@ -169,7 +169,7 @@ function BasicExample() {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-          <Button variant="dark" className="mx-auto d-block">
+          <Button variant="dark" className="mx-auto d-block my-btn">
             See all Muck's
           </Button>
         </Card.Body>

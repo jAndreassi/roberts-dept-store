@@ -19,8 +19,8 @@
   margin: 10px;
 }
 
-.card button {
-  background: #133955;
+.my-btn {
+  background-color: #133955; 
   position: absolute;
   bottom: 10px;
   left: 50%;

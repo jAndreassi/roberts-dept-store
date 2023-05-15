@@ -22,7 +22,10 @@ import asics from "../assets/images/asics.jpg";
 import sperry1 from "../assets/images/sperry.jpg";
 import keen from "../assets/images/keen.jpg";
 import keen1 from "../assets/images/keen1.png";
-const boots = [keen1, Keenboot, boot3, boot4];
+import keen2 from "../assets/images/keen2.jpeg";
+import keen3 from "../assets/images/keen3.jpeg";
+import keen4 from "../assets/images/keen4.jpeg";
+const boots = [keen1, keen2, keen3, boot4];
 
 function BasicExample() {
   const images = [
@@ -124,23 +127,40 @@ function BasicExample() {
         <Card.Img variant="bottom" src={keenbanner} />
       </Card>
 
-      <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Col key={idx}>
-            <Card className="custom-card" style={{ border: "none" }}>
-              <Card.Img className="mainPics" variant="top" src={boots[idx]} />
-              <Card.Body>
-                <Card.Title>Workboots!</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      <div className="row justify-content-around">
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={keen1} />
+          <Card.Body>
+            <Card.Title>Newport H2</Card.Title>
+            <Card.Text>Water friendly.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={keen2} />
+          <Card.Body>
+            <Card.Title>Newport H2</Card.Title>
+            <Card.Text>Water friendly.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={keen3} />
+          <Card.Body>
+            <Card.Title>Newport H2</Card.Title>
+            <Card.Text>Water friendly.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={keen4} />
+          <Card.Body>
+            <Card.Title>Newport H2</Card.Title>
+            <Card.Text>Water friendly.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
+          </Card.Body>
+        </Card>
+      </div>
 
       <Card style={{ marginBottom: ".5em" }}>
         <Card.Body style={{ backgroundColor: "#367588" }}>

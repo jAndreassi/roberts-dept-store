@@ -7,7 +7,7 @@ import boot2 from "../assets/images/wolverines/W10315.jpg";
 
 function BasicExample() {
   return (
-    <div style={{ paddingTop: "2em", paddingBottom: "10em" }}>
+    <div style={{ paddingTop: "1em", paddingBottom: "10em" }}>
       <Card>
         <Card.Body className="d-flex justify-content-between align-items-center">
           <Figure className="m-0">

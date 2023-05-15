@@ -21,7 +21,8 @@ import Image from "react-bootstrap/Image";
 import asics from "../assets/images/asics.jpg";
 import sperry1 from "../assets/images/sperry.jpg";
 import keen from "../assets/images/keen.jpg";
-const boots = [sperry, Keenboot, boot3, boot4];
+import keen1 from "../assets/images/keen1.png";
+const boots = [keen1, Keenboot, boot3, boot4];
 
 function BasicExample() {
   const images = [
@@ -30,7 +31,7 @@ function BasicExample() {
     { src: sperry1, alt: "Image 3", text: "Sperry A/O Boat Shoe" },
   ];
   return (
-    <div style={{ paddingBottom: "2em" }}>
+    <div style={{ paddingBottom: "1em" }}>
       <div className="row">
         {images.map((image, index) => (
           <div className="col-sm-4" key={index}>
@@ -123,7 +124,25 @@ function BasicExample() {
         <Card.Img variant="bottom" src={keenbanner} />
       </Card>
 
-      <Card style={{ marginBottom: "2em" }}>
+      <Row xs={1} md={2} className="g-4">
+        {Array.from({ length: 4 }).map((_, idx) => (
+          <Col key={idx}>
+            <Card className="custom-card" style={{ border: "none" }}>
+              <Card.Img className="mainPics" variant="top" src={boots[idx]} />
+              <Card.Body>
+                <Card.Title>Workboots!</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+
+      <Card style={{ marginBottom: ".5em" }}>
         <Card.Body style={{ backgroundColor: "#367588" }}>
           <Card.Text
             style={{
@@ -139,72 +158,42 @@ function BasicExample() {
         <Card.Img variant="bottom" src={Wolbanner} />
       </Card>
 
-      <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Col key={idx}>
-            <Card className="custom-card">
-              <Card.Img className="mainPics" variant="top" src={boots[idx]} />
-              <Card.Body>
-                <Card.Title>Workboots!</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-
-      <div className="row justify-content-center">
-        <Card style={{ width: "20rem", height: "25rem" }}>
-          <Card.Img variant="top" src={Keenboot} />
+      <div className="row justify-content-around">
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={boot1} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>Wovlerive 3226</Card.Title>
+            <Card.Text>Waterproof, 200 grams insulated, soft toe.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
           </Card.Body>
         </Card>
-        <Card style={{ width: "20rem", height: "25rem" }}>
-          <Card.Img variant="top" src={Keenboot} />
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={boot2} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>Wolverine 10315</Card.Title>
+            <Card.Text>Waterproof, non-insulated, soft-toe.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
           </Card.Body>
         </Card>
-        <Card style={{ width: "20rem", height: "25rem" }}>
-          <Card.Img variant="top" src={Keenboot} />
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={boot3} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>Wolverine 10317</Card.Title>
+            <Card.Text>Waterproof, non-insulated, soft-toe.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
           </Card.Body>
         </Card>
-        <Card style={{ width: "20rem", height: "25rem" }}>
-          <Card.Img variant="top" src={Keenboot} />
+        <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
+          <Card.Img variant="top" src={boot4} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>Wolverine 10788</Card.Title>
+            <Card.Text>Waterproof, non-insulated, safety-toe.</Card.Text>
+            <Button variant="primary">Add to cart!</Button>
           </Card.Body>
         </Card>
       </div>
 
-      <Card>
+      <Card style={{ border: "none", marginTop: "2em" }}>
         <Card.Body className="d-flex justify-content-between align-items-center">
           <Figure className="m-0">
             <Figure.Image width={1500} height={500} alt="Shirt 1" src={hero} />

@@ -23,18 +23,29 @@ function BasicExample() {
           </Figure>
         </Card.Body>
       </Card>
-      <Card>
-        <Card.Body className="d-flex justify-content-between align-items-center">
-          <Button variant="primary">Primary</Button>{" "}
-          <Button variant="secondary">Secondary</Button>{" "}
-          <Button variant="success">Success</Button>{" "}
-          <Button variant="warning">Warning</Button>{" "}
-          <Button variant="danger">Danger</Button>{" "}
-          <Button variant="info">Info</Button>{" "}
-          <Button variant="light">Light</Button>{" "}
-          <Button variant="dark">Dark</Button>
-        </Card.Body>
-      </Card>
+      <div className="d-flex justify-content-center">
+        <Button style={{ background: "#133955" }} className="m-2">
+          Workboots
+        </Button>
+        <Button style={{ background: "#133955" }} className="m-2">
+          Sneakers
+        </Button>
+        <Button style={{ background: "#133955" }} className="m-2">
+          Dress Shoes
+        </Button>
+        <Button style={{ background: "#133955" }} className="m-2">
+          Casual Shoes
+        </Button>
+        <Button style={{ background: "#133955" }} className="m-2">
+          Sandals
+        </Button>
+        <Button style={{ background: "#133955" }} className="m-2">
+          Slippers
+        </Button>
+        <Button style={{ background: "#133955" }} className="m-2">
+          Hiking Boots
+        </Button>
+      </div>
     </div>
   );
 }

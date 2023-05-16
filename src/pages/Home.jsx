@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import hero from "../assets/images/roberts.hero.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { Link } from "react-router-dom";
 import Figure from "react-bootstrap/Figure";
 import Wolbanner from "../assets/images/banners/WOLVERINE.BANNER.png";
 import boot1 from "../assets/images/wolverines/W03226.jpg";
@@ -35,7 +36,7 @@ function BasicExample() {
   ];
   return (
     <div style={{ paddingBottom: "1em" }}>
-      <div className="row">
+      <div className="row" style={{ paddingTop: "1em", paddingBottom: "1em" }}>
         {images.map((image, index) => (
           <div className="col-sm-4" key={index}>
             <div style={{ position: "relative", height: "100%" }}>
@@ -127,39 +128,35 @@ function BasicExample() {
         <Card.Img variant="bottom" src={keenbanner} />
       </Card>
 
-      <div className="row justify-content-around">
+      <div
+        className="row justify-content-around"
+        style={{ paddingBottom: "10em" }}>
         <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
           <Card.Img variant="top" src={keen1} />
           <Card.Body>
-            <Card.Title>Newport H2</Card.Title>
-            <Card.Text>Water friendly.</Card.Text>
-            <Button variant="primary">Add to cart!</Button>
+            <Card.Title className="text-center">Newport H2</Card.Title>
           </Card.Body>
         </Card>
         <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
           <Card.Img variant="top" src={keen2} />
           <Card.Body>
-            <Card.Title>Newport H2</Card.Title>
-            <Card.Text>Water friendly.</Card.Text>
-            <Button variant="primary">Add to cart!</Button>
+            <Card.Title className="text-center">Newport H2</Card.Title>
           </Card.Body>
         </Card>
         <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
           <Card.Img variant="top" src={keen3} />
           <Card.Body>
-            <Card.Title>Newport H2</Card.Title>
-            <Card.Text>Water friendly.</Card.Text>
-            <Button variant="primary">Add to cart!</Button>
+            <Card.Title className="text-center">Newport H2</Card.Title>
           </Card.Body>
         </Card>
+        {/* <Link to="/Brands"> */}
         <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
           <Card.Img variant="top" src={keen4} />
           <Card.Body>
-            <Card.Title>Newport H2</Card.Title>
-            <Card.Text>Water friendly.</Card.Text>
-            <Button variant="primary">Add to cart!</Button>
+            <Card.Title className="text-center">Newport H2</Card.Title>
           </Card.Body>
         </Card>
+        {/* </Link> */}
       </div>
 
       <Card style={{ marginBottom: ".5em" }}>
@@ -178,7 +175,9 @@ function BasicExample() {
         <Card.Img variant="bottom" src={Wolbanner} />
       </Card>
 
-      <div className="row justify-content-around">
+      <div
+        className="row justify-content-around"
+        style={{ paddingBottom: "10em" }}>
         <Card style={{ width: "20rem", height: "20rem", border: "none" }}>
           <Card.Img variant="top" src={boot1} />
           <Card.Body>
@@ -213,7 +212,7 @@ function BasicExample() {
         </Card>
       </div>
 
-      <Card style={{ border: "none", marginTop: "2em" }}>
+      <Card style={{ border: "none", marginTop: "2em", paddingTop: "5em" }}>
         <Card.Body className="d-flex justify-content-between align-items-center">
           <Figure className="m-0">
             <Figure.Image width={1500} height={500} alt="Shirt 1" src={hero} />
